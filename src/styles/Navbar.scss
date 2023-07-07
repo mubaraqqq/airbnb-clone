@@ -1,10 +1,12 @@
 nav {
-  padding: 0.25em 2%;
+  padding: 0 2%;
   border-bottom: 1px solid #ccc;
 
   img[alt="logo"] {
     width: 10%;
     cursor: pointer;
+    height: 75px;
+    width: auto;
   }
 
   div.search-bar-container {
@@ -14,16 +16,22 @@ nav {
     cursor: pointer;
 
     p {
-      font-weight: 500;
+      font-weight: 600;
       font-family: "Flow Circular";
       color: #222222;
     }
+    p:nth-child(2) {
+      border-left: 1px solid #dddddd;
+      border-right: 1px solid #dddddd;
+      padding: 0 12px;
+    }
     p:last-of-type {
       color: #717171;
+      font-weight: 500;
+    }
 
-      &:hover {
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
-      }
+    &:hover {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
     }
   }
 
@@ -38,13 +46,25 @@ nav {
       }
     }
 
+    > svg {
+      border-radius: 22px;
+      padding: 12px;
+      cursor: pointer;
+
+      &:hover {
+        background: #f7f7f7;
+      }
+    }
+
     .profile {
       padding: 5px 5px 5px 12px;
       border-radius: 21px;
       border: 1px solid #dddddd;
+      cursor: pointer;
+      transition: box-shadow 0.5s cubic-bezier(0.2, 0, 0, 1);
 
-      svg:hover {
-        cursor: pointer;
+      &:hover {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
       }
     }
   }

@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className="flex justify-between items-center">
       <Image src={logo} alt="logo" />
       <div className="search-bar-container w-[auto] pr-[5px] pl-[20px] py-[10px] flex justify-between items-center gap-3 text-sm rounded-[40px]">
-        <p>Anywhere</p> | <p>Any week</p> | <p>Add guests</p>
+        <p>Anywhere</p> <p>Any week</p> <p>Add guests</p>
         <Search
           sx={{
             bgcolor: "#FF385C",
@@ -21,12 +21,12 @@ const Navbar = () => {
           }}
         />
       </div>
-      <div className="profile-container flex items-center gap-3">
+      <div className="profile-container flex items-center gap-2">
         <p className="font-semibold text-sm">Airbnb your home</p>
-        <Language sx={{ color: "#616161" }} />
-        <div className="profile flex items-center gap-2">
+        <Language sx={{ color: "#616161", fontSize: "45px" }} />
+        <div className="profile flex items-center gap-1">
           <Menu sx={{ color: "#5b5a5a" }} />
-          <AccountCircle sx={{ color: "#767676", fontSize: "40px" }} />
+          <AccountCircle sx={{ color: "#767676", fontSize: "30px" }} />
         </div>
       </div>
     </nav>
