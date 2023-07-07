@@ -1,4 +1,4 @@
-nav {
+nav.nav-desktop {
   padding: 0 2%;
   border-bottom: 1px solid #ccc;
 
@@ -17,7 +17,7 @@ nav {
 
     p {
       font-weight: 600;
-      font-family: "Flow Circular";
+      font-family: "Circular";
       color: #222222;
     }
     p:nth-child(2) {
@@ -66,6 +66,30 @@ nav {
       &:hover {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
       }
+    }
+  }
+}
+
+div.nav-mobile {
+  padding: 14px 24px 0;
+
+  > div {
+    width: 97%;
+    margin: auto;
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 10px;
+    border-radius: 1000px;
+    min-height: 56px;
+    color: #222222;
+    font-family: "Circular";
+    padding: 0 0 0 1em;
+
+    svg:last-of-type {
+      margin-left: auto;
+      margin-right: 10px;
+      border: 1px solid #dddddd;
+      border-radius: 50%;
+      padding: 7px;
     }
   }
 }

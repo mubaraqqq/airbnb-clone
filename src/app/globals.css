@@ -2,12 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url(https://fonts.googleapis.com/css?family=Flow+Circular:regular);
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+}
+
+@font-face {
+  font-family: "Circular";
+  src: url("../app/fonts/CircularStd-Medium.otf");
+  /* Add additional font formats and URLs as needed */
+  /* Specify font-weight and font-style if desired */
 }
 
 /* @media (prefers-color-scheme: dark) {
