@@ -11,8 +11,19 @@
 @font-face {
   font-family: "Circular";
   src: url("../app/fonts/CircularStd-Medium.otf");
-  /* Add additional font formats and URLs as needed */
-  /* Specify font-weight and font-style if desired */
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Circular";
+  src: url("../app/fonts/CircularStd-Light.otf");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "Circular";
+  src: url("../app/fonts/CircularStd-Bold.otf");
+  font-weight: bold;
 }
 
 /* @media (prefers-color-scheme: dark) {

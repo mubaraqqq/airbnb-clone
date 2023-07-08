@@ -48,7 +48,7 @@ const Navbar = () => {
           <div className="flex items-center gap-3">
             <Search />
             <div className="flex flex-col">
-              <p className="text-sm font-medium">Anywhere</p>
+              <p className="text-sm font-bold">Anywhere</p>
               <p className="text-xs font-light text-[#717171]">
                 Any week • Add guests
               </p>
