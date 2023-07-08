@@ -1,0 +1,19 @@
+.filter-container {
+  overflow-x: hidden;
+  padding: 1em 2em;
+  height: auto;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+
+  > div {
+    overflow: scroll;
+    height: 100%;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

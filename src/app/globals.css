@@ -39,6 +39,7 @@ body {
   background: rgb(var(--background-end-rgb));
   margin: 0;
   padding: 0;
+  font-family: "Circular", sans-serif;
   /* linear-gradient(
       to bottom,
       transparent,

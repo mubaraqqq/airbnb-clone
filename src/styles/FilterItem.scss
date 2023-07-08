@@ -1,0 +1,17 @@
+.filter-item {
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+
+  p {
+    white-space: nowrap;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    p {
+      color: #000000;
+    }
+  }
+}
