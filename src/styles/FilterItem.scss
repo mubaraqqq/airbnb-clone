@@ -5,6 +5,9 @@
 
   p {
     white-space: nowrap;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 
   &:hover,
