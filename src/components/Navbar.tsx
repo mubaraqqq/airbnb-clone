@@ -20,7 +20,7 @@ const Navbar = () => {
       {largeScreen ? (
         // Desktop & Tablet Screen
         <nav className="nav-desktop flex justify-between items-center">
-          <Image src={logo} alt="logo" />
+          <Image src={logo} alt="logo" priority />
           <div className="search-bar-container w-[auto] pr-[5px] pl-[20px] py-[10px] flex justify-between items-center gap-3 text-sm rounded-[40px]">
             <p>Anywhere</p> <p>Any week</p> <p>Add guests</p>
             <Search

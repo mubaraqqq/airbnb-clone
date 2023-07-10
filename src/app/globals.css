@@ -46,3 +46,7 @@ body {
       rgb(var(--background-end-rgb))
     ) */
 }
+
+p {
+  font-family: "Circular", sans-serif;
+}
