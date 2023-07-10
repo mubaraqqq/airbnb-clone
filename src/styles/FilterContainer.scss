@@ -12,7 +12,7 @@
     height: 100%;
     scrollbar-width: none;
     scroll-behavior: smooth;
-    margin: 0 16% 0 3%;
+    // margin: 0 16% 0 3%;
 
     &::-webkit-scrollbar {
       display: none;
@@ -31,10 +31,15 @@
     background-color: #ffffff;
     width: 28px;
     height: 28px;
+    transition: box-shadow 0.5s cubic-bezier(0.2, 0, 0, 1);
 
     img {
       width: 12px;
       height: 12px;
+    }
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
     }
   }
 }

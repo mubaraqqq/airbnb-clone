@@ -151,7 +151,7 @@ const FilterContainer = () => {
         onClick={scrollNext}
         className={`scroll absolute hidden sm:${
           lastFilterVisible ? "hidden" : "flex"
-        } items-center justify-center top-[25%] right-[13%]`}
+        } items-center justify-center top-[25%] lg:right-[14%] md:right-[19%]`}
       >
         <Image src={nextArrow} alt="next" />
       </button>
@@ -167,7 +167,10 @@ const FilterContainer = () => {
         <Tune sx={{ fontSize: "14px" }} />
         <p className="text-xs select-none">Filter</p>
       </button>
-      <div className="filter-row flex gap-14" ref={filterRowRef}>
+      <div
+        className="filter-row flex gap-14 md:mr-[21%] ml-[3%] lg:mr-[15%]"
+        ref={filterRowRef}
+      >
         {filterArrayData.map((filter) => (
           <FilterItem key={filter.label} {...filter} />
         ))}
