@@ -108,7 +108,7 @@ const FilterContainer = () => {
             key={filter.label}
             className={`border-b-[3px] border-transparent hover:border-[#cccccc] ${
               currentSectionIndex === index
-                ? "border-[#272626] hover:border-[#272626]"
+                ? "border-[#000000] hover:border-[#000000]"
                 : ""
             }`}
             onClick={() => updateSection(index)}
