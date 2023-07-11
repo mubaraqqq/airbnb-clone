@@ -4,14 +4,28 @@
 import Image from "next/image";
 import Carousel from "react-material-ui-carousel";
 import "@/styles/ListingCard.scss";
-import { Star } from "@mui/icons-material";
+import { FavoriteBorder, Favorite, Star } from "@mui/icons-material";
 import { ListingItem } from "@/types";
+import { Checkbox } from "@mui/material";
 
 interface ListingCardProps extends ListingItem {}
 
 const ListingCard = (listingItem: ListingCardProps) => {
   return (
-    <div className="listing-card w-[312px] h-[auto] flex flex-col gap-4">
+    <div className="listing-card w-[312px] h-[auto] flex flex-col gap-4 relative">
+      <Checkbox
+        icon={<FavoriteBorder />}
+        checkedIcon={<Favorite sx={{ color: "#000000" }} />}
+        sx={{
+          position: "absolute",
+          top: "1em",
+          right: "1em",
+          zIndex: "20",
+          padding: "5px",
+          borderRadius: "50%",
+          backgroundColor: "#ffffff",
+        }}
+      />
       <Carousel
         navButtonsAlwaysVisible
         indicatorContainerProps={{
