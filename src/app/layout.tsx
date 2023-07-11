@@ -1,10 +1,7 @@
 import FilterContainer from "@/components/FilterContainer";
 import Navbar from "@/components/Navbar";
 import "./globals.css";
-import { Inter } from "next/font/google";
 import SectionProvider from "./SectionProvider";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Airbnb",
@@ -22,7 +19,7 @@ export default function RootLayout({
         <SectionProvider>
           <Navbar />
           <FilterContainer />
-          <main className={inter.className}>{children}</main>
+          {children}
         </SectionProvider>
       </body>
     </html>
