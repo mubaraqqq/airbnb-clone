@@ -1,5 +1,8 @@
+import FilterContainer from "@/components/FilterContainer";
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import SectionProvider from "./SectionProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +18,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <SectionProvider>
+          <Navbar />
+          <FilterContainer />
+          <main className={inter.className}>{children}</main>
+        </SectionProvider>
+      </body>
     </html>
   );
 }

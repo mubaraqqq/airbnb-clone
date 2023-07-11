@@ -10,19 +10,19 @@
 
 @font-face {
   font-family: "Circular";
-  src: url("../app/fonts/CircularStd-Medium.otf");
+  src: url("../fonts/CircularStd-Medium.otf");
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Circular";
-  src: url("../app/fonts/CircularStd-Light.otf");
+  src: url("../fonts/CircularStd-Light.otf");
   font-weight: lighter;
 }
 
 @font-face {
   font-family: "Circular";
-  src: url("../app/fonts/CircularStd-Bold.otf");
+  src: url("../fonts/CircularStd-Bold.otf");
   font-weight: bold;
 }
 

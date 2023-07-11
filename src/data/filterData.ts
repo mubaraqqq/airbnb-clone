@@ -60,7 +60,6 @@ import dammusi from "@/assets/dammusi.jpg";
 import riads from "@/assets/riads.jpg";
 import trulli from "@/assets/truli.jpg";
 import { FilterItem } from "@/types";
-import { arch } from "os";
 
 export const filterArrayData: FilterItem[] = [
   { label: "Trending", icon: trending },
