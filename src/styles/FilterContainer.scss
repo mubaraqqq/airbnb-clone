@@ -42,4 +42,21 @@
       box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
     }
   }
+
+  button.filter-item-button {
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+
+    &:hover {
+      border-bottom-color: #cccccc;
+    }
+
+    &.active {
+      border-bottom-color: #000000;
+      &:hover {
+        border-bottom-color: #000000;
+      }
+    }
+  }
 }

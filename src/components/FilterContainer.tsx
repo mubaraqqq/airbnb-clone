@@ -51,6 +51,10 @@ const FilterContainer = () => {
 
     // Start observing the target element
     observer.observe(targetElement);
+
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
   useEffect(() => {
@@ -75,6 +79,10 @@ const FilterContainer = () => {
 
     // Start observing the target element
     observer.observe(targetElement);
+
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
   return (
@@ -106,10 +114,8 @@ const FilterContainer = () => {
         {filterArrayData.map((filter, index) => (
           <button
             key={filter.label}
-            className={`border-b-[3px] border-transparent hover:border-[#cccccc] ${
-              currentSectionIndex === index
-                ? "border-[#000000] hover:border-[#000000]"
-                : ""
+            className={`filter-item-button ${
+              currentSectionIndex === index ? "active" : ""
             }`}
             onClick={() => updateSection(index)}
           >
