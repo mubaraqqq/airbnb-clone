@@ -7,10 +7,14 @@ import "@/styles/ListingCard.scss";
 import { FavoriteBorder, Favorite, Star } from "@mui/icons-material";
 import { ListingItem } from "@/types";
 import { Checkbox } from "@mui/material";
+import { useContext } from "react";
+import { SectionContext } from "@/app/SectionProvider";
 
 interface ListingCardProps extends ListingItem {}
 
 const ListingCard = (listingItem: ListingCardProps) => {
+  const { toggleListingFavourite } = useContext(SectionContext);
+
   return (
     <div className="listing-card w-[312px] h-[auto] flex flex-col gap-4 relative">
       <Checkbox
@@ -25,6 +29,8 @@ const ListingCard = (listingItem: ListingCardProps) => {
           borderRadius: "50%",
           backgroundColor: "#ffffff",
         }}
+        checked={listingItem.favourite}
+        onChange={() => toggleListingFavourite(listingItem.id)}
       />
       <Carousel
         navButtonsAlwaysVisible

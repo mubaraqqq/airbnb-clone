@@ -27,7 +27,7 @@ export const listingItem: ListingItem = {
 
 // console.log(listingItem);
 
-export const listingArray: ListingItem[] = [
+export const mockListingArray: ListingItem[] = [
   {
     id: v1(),
     name: `${Math.floor(
