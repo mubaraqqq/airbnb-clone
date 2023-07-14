@@ -1,0 +1,16 @@
+footer {
+  background-color: #ffffff;
+  height: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  &.tab-desktop {
+    p:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &.mobile {
+  }
+}

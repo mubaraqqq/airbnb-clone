@@ -16,7 +16,7 @@ const ListingCard = (listingItem: ListingCardProps) => {
   const { toggleListingFavourite } = useContext(SectionContext);
 
   return (
-    <div className="listing-card w-[312px] h-[auto] flex flex-col gap-4 relative">
+    <div className="listing-card w-[312px] min-h-[400] flex flex-col gap-4 relative">
       <Checkbox
         icon={<FavoriteBorder />}
         checkedIcon={<Favorite sx={{ color: "#000000" }} />}
@@ -24,7 +24,7 @@ const ListingCard = (listingItem: ListingCardProps) => {
           position: "absolute",
           top: "1em",
           right: "1em",
-          zIndex: "20",
+          zIndex: "2",
           padding: "5px",
           borderRadius: "50%",
           backgroundColor: "#ffffff",
@@ -41,6 +41,8 @@ const ListingCard = (listingItem: ListingCardProps) => {
           style: { color: "rgba(204, 204, 204, 0.5)" },
         }}
         activeIndicatorIconButtonProps={{ style: { color: "#ffffff" } }}
+        animation="slide"
+        autoPlay={false}
       >
         {listingItem.images.map((image, index) => (
           <Image

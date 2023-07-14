@@ -31,18 +31,14 @@ const SectionProvider = ({ children }: { children: ReactNode }) => {
       (listing) => listing.id === listingId
     );
     const listing = listingData[listingIndex];
-    console.log(listingIndex, listing);
 
     let listingFavourite = listing.favourite;
-    console.log(listingFavourite);
 
     listingFavourite = !listingFavourite;
     listing.favourite = listingFavourite;
     let newListingData = [...listingData];
     newListingData[listingIndex] = listing;
     setListingData(newListingData);
-
-    console.log({ listing, newListingData });
   }
 
   return (
