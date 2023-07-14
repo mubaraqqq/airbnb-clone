@@ -56,7 +56,7 @@ const ListingCard = (listingItem: ListingCardProps) => {
         ))}
       </Carousel>
       <div className="flex flex-col gap-1">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-start">
           <p className="text-[15px] text-[#222222] font-semibold">
             {listingItem.name}
           </p>
